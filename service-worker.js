@@ -1,8 +1,8 @@
-const CACHE = 'wedding-weekend-v1';
+const CACHE = 'wedding-weekend-v2';
 const OFFLINE_FILES = [
   './', './index.html', './saturday.html', './style.css', './script.js',
   './manifest.webmanifest', './wedding-weekend.ics',
-  './assets/lakeside-watercolor.png', './assets/event-watercolors.png',
+  './assets/lakeside-watercolor.jpg', './assets/event-watercolors.jpg',
   './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png'
 ];
 
