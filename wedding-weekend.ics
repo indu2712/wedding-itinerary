@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Yukti and Indushan//Wedding Weekend//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:yukti-indushan-wedding-weekend-20270226@example.com
+DTSTAMP:20261119T000000Z
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270228
+SUMMARY:Yukti & Indushan's Wedding Weekend
+LOCATION:Bangalore\, India
+DESCRIPTION:Join us for a weekend of celebration in Bangalore.
+END:VEVENT
+END:VCALENDAR
