@@ -57,7 +57,7 @@
       refresh();
     } catch (error) {
       clearTimeout(timeout);
-      status.textContent = 'Reminders are not available yet. Please try again later.';
+      status.textContent = /not configured for web push/i.test(String(error)) ? 'Reminders are not set up yet. Please check back later.' : 'Reminders could not be loaded. Check your connection and try again.';
       console.warn('Notification setup failed:', error);
     }
   });
