@@ -1,8 +1,32 @@
-const CACHE = 'wedding-weekend-v3';
+const CACHE = 'wedding-weekend-v4';
 const OFFLINE_FILES = [
-  './', './index.html', './saturday.html', './style.css?v=3', './script.js',
+  './', './index.html', './saturday.html', './style.css?v=4', './script.js?v=4',
+  './vendor/add-to-homescreen/add-to-homescreen.min.css', './vendor/add-to-homescreen/add-to-homescreen_en.min.js',
   './manifest.webmanifest', './wedding-weekend.ics',
   './assets/lakeside-watercolor.jpg', './assets/event-watercolors.jpg',
+  './vendor/add-to-homescreen/assets/android-chrome-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/android-chrome-install-and-create-shortcut.svg',
+  './vendor/add-to-homescreen/assets/android-chrome-more-button-2.svg',
+  './vendor/add-to-homescreen/assets/android-edge-add-to-home-screen-button.svg',
+  './vendor/add-to-homescreen/assets/android-edge-more-button.svg',
+  './vendor/add-to-homescreen/assets/desktop-safari-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/desktop-safari-dock.svg',
+  './vendor/add-to-homescreen/assets/desktop-safari-menu.svg',
+  './vendor/add-to-homescreen/assets/generic-more-button.svg',
+  './vendor/add-to-homescreen/assets/generic-vertical-down-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/generic-vertical-up-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/ios-chrome-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/ios-chrome-more-button-2.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-add-to-home-screen-button-2.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-bouncing-arrow.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios26-more-grey-arrow-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios26-more-white-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios26-share-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios27-bar-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios27-more-grey-arrow-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-ios27-share-button.svg',
+  './vendor/add-to-homescreen/assets/ios-safari-sharing-api-button-2.svg',
+  './vendor/add-to-homescreen/assets/openinsafari-button.png',
   './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png'
 ];
 

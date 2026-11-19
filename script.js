@@ -45,3 +45,31 @@ window.addEventListener('appinstalled', () => {
   installPrompt = null;
   installButton.hidden = true;
 });
+
+// Browser-specific installation guide by Philip Fung (MIT licence).
+const guideButton = document.getElementById('guide-button');
+const isInstalled = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+if (!isInstalled && typeof window.AddToHomeScreen === 'function') {
+  const guide = window.AddToHomeScreen({
+    appName: 'Yukti & Indushan’s Wedding',
+    appIconUrl: 'assets/apple-touch-icon.png',
+    assetUrl: 'vendor/add-to-homescreen/assets/',
+    maxModalDisplayCount: -1,
+    displayOptions: { showMobile: true, showDesktop: true },
+    allowClose: true,
+    showArrow: true
+  });
+  guideButton.hidden = false;
+  guideButton.addEventListener('click', () => guide.show('en'));
+  if (isMobile) {
+    try {
+      if (!localStorage.getItem('wedding-install-guide-seen')) {
+        localStorage.setItem('wedding-install-guide-seen', '1');
+        guide.show('en');
+      }
+    } catch (_) {
+      // The manual button remains available when browser storage is blocked.
+    }
+  }
+}

@@ -5,3 +5,4 @@ html{scroll-behavior:smooth}.weekend-tools{text-align:center;padding:0 20px 34px
 /* Each day has its own page; keep the schedule comfortably readable on wide screens. */
 .schedule{display:block;max-width:740px;margin-inline:auto}.day-nav a[aria-current="page"]{background:var(--wine);color:#fff8ee}.day-nav a[aria-current="page"]:hover{background:#59232a}
 .install-area{margin:4px auto 0;max-width:440px}.install-button{font:inherit;color:var(--wine);background:transparent;border:1px solid #a98576;padding:10px 16px;cursor:pointer}.install-button:hover,.install-button:focus-visible{background:var(--wine);color:#fff8ee}.install-help{margin:12px auto 0;font-size:.9rem;line-height:1.5}.install-help summary{color:var(--wine);cursor:pointer;text-decoration:underline;text-underline-offset:3px}.install-help p{margin:10px 0 0}
+.guide-button{margin:4px}.install-button[hidden]{display:none}
